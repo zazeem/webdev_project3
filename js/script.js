@@ -1,0 +1,1 @@
+var map = new google.maps.Map(DOM element, options);
