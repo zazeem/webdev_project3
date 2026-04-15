@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-image: url("../media/outerbackground.jpg");
+  background-repeat: repeat;
+  background-color: gray;
+  text-align: center;
+  font-size: 120%;
+  font-family: "Arsenal", Times New Romen, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.homepage-wrapper {
+  background-color: #7d1a1e;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  background-image: url("../media/banner.jpg");
+  text-align: center;
+  background-color: red;
+  padding: 15px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav a {
+  font-family: "Arsenal", sans-serif;
+  text-decoration: none;
+  color: #FFBF00;
+  font-weight: bold;
+  font-size: 120%;
+}
+nav a:hover {
+  color: #FFBF00;
+  font-size: 1.2em;
+  text-shadow: 0 0 5px #A67C00, 0 0 10px #A67C00, 0 0 15px #A67C00;
+}
+.text{
+  background-image: url("../media/banner.jpg");
+  font-family: "Segoe Ui", sans-serif;
+  margin: 5%;
+  float: left;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.3); 
+}
+.intro, .hobbies{
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+.gallery {
+  background-image: url("../media/banner.jpg");
+  font-family: "Segoe Ui", sans-serif;
+  margin: 5%;
+  display: inline-block;
+  width: 90%;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.gallery img {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+  height: auto;
+  margin: 1%;
+  border-radius: 6px;
+  border: 3px solid red;
+}
+
+.resume-wrapper {
+  background-color: #7d1a1e;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.column1, .column2{
+  padding: 5%;
+}
+
+.drawing img{
+  border-radius: 50%;
+}
+.column1 {
+  background-color: #421515;
+  width: 35%;
+  float: left;
+}
+
+.column2 {
+  background-color: #7d1a1e;
+  width: 65%;
+  float: right;
+}
+
+a {
+  color: #e6c76b;
+}
+
+.portfolio-wrapper {
+  background-color: #7d1a1e;
+  width: 60%;
+  margin: auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+.images {
+  background-image: url("../media/banner.jpg");
+  display: inline-block;
+  margin: 5%;
+  width: 90%;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.images img, .images video{
+  display: inline-block;
+  width: 45%;
+  margin: 1%;
+  height: auto;
+  border-radius: 6px;
+  border: 3px solid red;
+}
