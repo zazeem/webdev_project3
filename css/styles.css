@@ -157,6 +157,12 @@ a {
   text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF;
 }
 
+#map {
+  width: 90%;
+  height: 400px;
+
+}
+
 @media (max-width: 900px) {
   .maps-wrapper, .homepage-wrapper, .resume-wrapper, .portfolio-wrapper {
     width: 100%;

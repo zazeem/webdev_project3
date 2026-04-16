@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="script.js"></script>
+		<script defer src="js/script.js"></script>
 		<script async
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzhzTTet0Dul3aYCr1dbFCldzNogMsQCI&loading=async&callback=initMap">
 		</script>
   </head>
+	<body>
 		<div class="maps-wrapper">
         <nav>
           <ul>
@@ -21,25 +22,14 @@
 						<li><a href="maps.html">Maps</a></li>
           </ul>
         </nav>
-				<h2>Important Places + Routes<h2>
-				<div id="map">
-					<iframe
-						src="https://www.google.com/maps?q=Illinois+Institute+of+Technology+Tower&output=embed"
-						width= 90%;
-						height="300"
-						style="border:0;"
-						allowfullscreen="true"
-						loading="lazy">
-					</iframe>
-				</div>
+				<h2>Important Places + Routes</h2>
+				<div id="map"></div>
 				<div class="map-buttons">
 					<button onclick="routeMarkers()">Route to School</button>
 					<button onclick="campus()">Campus</button>
-					<button onclick="chinatownRec">Chinatown Reccomendation</button>
+					<button onclick="chinatownRec()">Chinatown Reccomendation</button>
 				</div>
     </div>
-  <body>
-
   </body>
 
 </html>
