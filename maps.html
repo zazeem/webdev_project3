@@ -7,10 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script defer src="script.js"></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzhzTTet0Dul3aYCr1dbFCldzNogMsQCI&loading=async&callback=initMap">
-		</script>
+		<script src="script.js" defer></script>
   </head>
 	<body>
 		<div class="maps-wrapper">
@@ -22,13 +19,13 @@
 						<li><a href="maps.html">Maps</a></li>
           </ul>
         </nav>
-				<h2>Important Places + Routes</h2>
+				<h2>Important Places</h2>
 				<div id="map"></div>
-				<div class="map-buttons">
-					<button onclick="routeMarkers()">Route to School</button>
-					<button onclick="campus()">Campus</button>
-					<button onclick="chinatownRec()">Chinatown Reccomendation</button>
-				</div>
+					
+					<script
+						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzhzTTet0Dul3aYCr1dbFCldzNogMsQCI&callback=initMap&v=weekly&libraries=marker"
+						async defer
+					></script>
     </div>
   </body>
 

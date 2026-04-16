@@ -140,37 +140,12 @@ a {
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-.map-buttons button {
-  font-family: "Arsenal", Times New Romen, sans-serif;
-  background-color: #3e0d0f;
-  padding: 2%;
-  margin: 1%;
-  border: none;
-  background: #3e0d0f;
-  border-radius: 40% 60% 30% 50%;
-  color: white;
-  font-weight: bold;
-}
-.map-buttons button a:hover {
-  font-size: 200%;
-  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF;
-}
-
-#map {
-  margin: 1%;
-  height: 400px;
-}
-
 @media (max-width: 900px) {
   .maps-wrapper, .homepage-wrapper, .resume-wrapper, .portfolio-wrapper {
     width: 100%;
   }
   .images img, .images video{
     width: 100%;
-  }
-  .map-buttons button {
-    width: 60%;
-    font-size: 100%;
   }
   nav a {
     font-size: 90%;
