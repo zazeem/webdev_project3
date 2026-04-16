@@ -149,18 +149,16 @@ a {
   background: #3e0d0f;
   border-radius: 40% 60% 30% 50%;
   color: white;
-  cursor: pointer;
   font-weight: bold;
 }
 .map-buttons button a:hover {
-  color: #FFFFFF;
+  font-size: 200%;
   text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 15px #FFFFFF;
 }
 
 #map {
-  width: 90%;
+  margin: 1%;
   height: 400px;
-
 }
 
 @media (max-width: 900px) {
