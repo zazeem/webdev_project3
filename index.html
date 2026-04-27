@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script src="script.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
@@ -44,13 +45,14 @@
           </ul>
         </div>
       </div>
-      
-      <div class="gallery">
-      <h2>My Adventures around Chicago!</h2>
-      <img src="media/skyline.jpg" alt="A photo of a building in Chicago">
-      <img src="media/chinatown.jpg" alt="A photo of people walking around during a festival">
-      <img src="media/ferris.jpg" alt="A photo of the ferris wheel at Navy Pier">
-      </div>
+			<div class="gallery">
+				<div class="slider">
+				<h2>My Adventures around Chicago!</h2>
+				<img id="slider" src="media/ferris.jpg" alt="Photo Gallery Image">
+				</div>
+				<button id="prev" type="button">Prev</button>
+				<button id="next" type="button">Next</button>
+			</div>
     </div>
   </body>
 

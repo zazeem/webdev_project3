@@ -1,26 +1,43 @@
+const slider = document.getElementById("slider");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
 var map;
-function initMap() {
-  const mapEl = document.getElementById('map')
-  var map = new google.maps.Map(document.getElementById('map'), { 
-    center: {lat: 41.8781, lng: -87.6298},
-    zoom: 9,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-  }); 
-}
-  const marker1 = new google.maps.Marker({
-    map: map,
-    position: { lat: 41.8781, lng: -87.6298 },
-    title: "Illinois Institute of Technology",
-    });
 
-  const marker2 = new google.maps.Marker({
-    map: map,
-    position: { lat: 41.5643, lng: -87.8095 },
-    title: "Tinley/80th Ave Station",
-    
-  const marker3 = new google.maps.Marker({
-    map: map,
-    position: { lat: 41.853703, lng: -87.6347661 },
-    title: "Tinley/80th Ave Station",
+console.log(slider, prev, next);
+
+if (slider && prev && next) {
+  const images = [
+    "media/skyline.jpg",
+    "media/chinatown.jpg",
+    "media/ferris.jpg"
+  ];
+
+  const altText = [
+    "A photo of a building in Chicago",
+    "A photo of people walking around during a festival",
+    "A photo of the ferris wheel at Navy Pier"
+  ];
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    slider.src = images[index];
+    slider.alt = altText[index];
+  }
+
+  next.addEventListener("click", function () {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    showImage(currentIndex); 
   });
   
+  prev.addEventListener("click", function () {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    }
+    showImage(currentIndex);
+  });
+}

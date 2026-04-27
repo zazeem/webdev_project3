@@ -75,6 +75,18 @@ nav a:hover {
   border-radius: 6px;
   border: 3px solid red;
 }
+#prev, #next {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #7d1a1e;
+  color: white;
+  font-size: 120%;
+  font-family: "Arsenal", Times New Romen, sans-serif;
+  font-weight: bold;
+}
 
 .resume-wrapper {
   background-color: #7d1a1e;

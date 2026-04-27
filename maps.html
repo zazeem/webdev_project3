@@ -20,11 +20,20 @@
           </ul>
         </nav>
 				<h2>Important Places</h2>
-				<div id="map"></div>
-					<script
-						src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660Sbk3-Vw9o9f7AEvTAIH8rI&callback=initMap&v=weekly&libraries=marker"
-						async defer
-					></script>
+				<div id="map">
+					<script>
+						var map;
+						function initMap() {
+							map = new google.maps.Map(document.getElementById('map'), {
+								center: {lat: -34.397, lng: 150.644},
+								zoom: 8
+							});
+						}
+					</script>
+					<script src="https://maps.googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
+						async defer>
+					</script>
+				</div>
     </div>
   </body>
 
